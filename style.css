@@ -1,0 +1,484 @@
+/* ascent style css */
+/* main font */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&display=swap');
+/* sub font */
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+/* korean font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: #fff989;
+}
+
+#bg {
+    width: 100%;
+    height: 160vh;
+    background: linear-gradient(to bottom, transparent, #30371e),
+        url(./images/main\ visuial.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 40%;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-direction {
+    flex-direction: column;
+}
+
+.just-a {
+    justify-content: space-around;
+}
+
+.just-b {
+    justify-content: space-between;
+}
+
+.just-e {
+    justify-content: space-evenly;
+}
+
+.just-center {
+    justify-content: center;
+}
+
+.just-flexend {
+    justify-content: flex-end;
+}
+
+.align-item {
+    align-items: center;
+}
+
+.align-item-b {
+    align-items: flex-end;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.hidden {
+    display: none;
+}
+
+p {
+    font-family: 'Noto Serif KR', serif;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    /* border: 1px solid red; */
+    padding-top: 7vh;
+    position: relative;
+}
+
+#nav-left {
+    width: 30%;
+}
+
+.h-logo {
+    margin-left: 12vw;
+    margin-top: -2vh;
+}
+
+#nav-right {
+    margin-left: 10vw;
+    width: 30%;
+    /* border: 1px solid green; */
+}
+
+nav>ul>li>a {
+    font-family: 'Antic Didone', serif;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 1rem;
+}
+
+#visual {
+    width: 100%;
+}
+
+h1 {
+    margin-top: 25vh;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+#bg-circle {
+    width: 30vw;
+    height: 40vh;
+    background-image: url(./images/images_07.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 23vh;
+    left: 35vw;
+}
+
+hr {
+    width: 0.15vw;
+    height: 15vh;
+    background-color: #fff989;
+    opacity: 0.5;
+    margin-top: 15vh;
+    margin-left: 50vw;
+    border: none;
+}
+
+.line_star {
+    margin-top: 5vh;
+    margin-left: 49.3vw;
+}
+
+#circle-text {
+    position: absolute;
+    top: 80vh;
+    left: 89vw;
+    position: fixed;
+    z-index: 11;
+    cursor: pointer;
+}
+
+#circle-text img {
+    width: 7vw;
+}
+
+h2 {
+    font-family: 'Antic Didone', serif;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 7vh;
+    margin-top: 20vh;
+    letter-spacing: 0.2vw;
+    position: relative;
+    z-index: 1;
+}
+
+.sence-image {
+    background-image: url(./images/images_15.png);
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 60vh;
+    position: absolute;
+    top: 119vh;
+    left: 40vw;
+}
+
+#brand-intro {
+    width: 100%;
+    height: 55vh;
+    background-color: #30371e;
+}
+
+#brand-intro li {
+    width: 21vw;
+    text-align: left;
+    color: #fff;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 0.9rem;
+}
+
+.b-left {
+    margin-left: 10vw;
+    line-height: 3.5vh;
+    font-size: 1rem;
+    position: absolute;
+    top: 145vh;
+}
+
+.b-right {
+    margin-left: 70vw;
+    line-height: 4vh;
+    font-size: 1rem;
+}
+
+#scense-wrap {
+    width: 100%;
+    height: 15vh;
+    margin-top: 10vh;
+}
+
+#scense-t {
+    width: 27vw;
+    /* border: 1px solid gold; */
+}
+#scense-t>li {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#scense-t>li>a {
+    display: block;
+    color: #fff;
+}
+#scense-t>li>a:hover{
+    color: #fff989;
+}
+
+#brand {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/imges_22.jpg);
+    /* background-color: #557744; */
+    position: relative;
+}
+
+#brandwrap>ul {
+    padding: 15vh;
+}
+
+#brandwrap>ul>li {
+    color: #fff;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 0.9rem;
+    margin-bottom: 10vh;
+    line-height: 5vh;
+}
+
+.b-big {
+    width: 50%;
+    height: 100vh;
+}
+
+.brand-logo {
+    background-image: url(./images/images_26.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40vw;
+    height: 20vh;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.b-small {
+    width: 20vw;
+    height: 40vh;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 70vh;
+}
+
+#product {
+    width: 100%;
+    height: 260vh;
+    background-color: #fffcc7;
+    padding: 20vh 25vh 0 25vh;
+    position: relative;
+}
+
+h3 {
+    font-family: 'Antic Didone', serif;
+    font-weight: 500;
+    font-size: 6rem;
+    color: #547543;
+}
+
+.diffser {
+    width: 100%;
+    height: 55vh;
+    position: relative;
+    /* border: 1px solid red; */
+
+}
+
+.diffser img {
+    margin-left: 25vw;
+}
+
+.diffser h3 {
+    position: absolute;
+    top: 40vh;
+}
+
+.leftline {
+    width: 85vw;
+    height: 0.5vh;
+    background-color: #547543;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    margin: 0;
+}
+
+.fabirc {
+    width: 100%;
+    height: 55vh;
+    position: relative;
+}
+
+.fabirc img {
+    margin-left: 10vw;
+}
+
+.fabirc h3 {
+    position: absolute;
+    top: 40vh;
+    right: 0;
+}
+
+.rightline {
+    width: 85vw;
+    height: 0.5vh;
+    background-color: #547543;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+}
+
+.deo {
+    width: 100%;
+    height: 55vh;
+    position: relative;
+}
+
+.deo h3 {
+    position: absolute;
+    top: 40vh;
+}
+
+.deo img {
+    margin-left: 25vw;
+}
+
+.hand {
+    width: 100%;
+    height: 55vh;
+    position: relative;
+}
+
+.hand h3 {
+    position: absolute;
+    top: 40vh;
+    right: 0;
+}
+
+.hand img {
+    margin-left: 10vw;
+}
+
+#slider {
+    width: 100%;
+    height: 130vh;
+    padding-top: 20vh;
+    position: relative;
+}
+
+h4 {
+    font-family: 'Antic Didone', serif;
+    font-weight: 500;
+    color: #547543;
+    font-size: 3rem;
+    margin-left: 10vw;
+    position: relative;
+    z-index: 1;
+}
+
+.bgcircle-1 {
+    background-image: url(./images/images_48.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 7vw;
+    height: 14vh;
+    position: absolute;
+    top: 8vw;
+    left: 8.5vw;
+}
+
+#sliderimg {
+    margin-top: 20vh;
+}
+
+.change img {
+    position: relative;
+    z-index: 1;
+}
+
+.c-bgimge {
+    background-image: url(./images/images_45.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25vw;
+    height: 45vh;
+    position: absolute;
+    top: 40vh;
+    right: 34vw;
+}
+
+.sliderbuttonwrap {
+    margin-top: 10vh;
+    width: 20vw;
+}
+
+footer {
+    background-image: url(./images/imges_73.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    padding: 5vw;
+}
+
+.f-logo img {
+    width: 10vw;
+}
+
+.f-logo p {
+    color: #fff;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+    letter-spacing: 0.1vw;
+}
+
+#copy {
+    width: 50vw;
+    height: 12vh;
+    margin-left: 10vw;
+    /* border: 1px solid red; */
+}
+
+#copy li {
+    font-weight: 500;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    letter-spacing: 0.1vw;
+    font-size: 1rem;
+}
+
+#customer {
+    margin-top: 4vh;
+    line-height: 3vh;
+    font-size: 0.7rem;
+}
+
+.center p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
