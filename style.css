@@ -71,7 +71,10 @@
 .hidden {
     display: none;
 }
-
+.change{
+    color: #fff989;
+    font-weight: 500;
+  }
 p {
     font-family: 'Noto Serif KR', serif;
 }
@@ -177,13 +180,54 @@ h2 {
 }
 
 .sence-image {
-    background-image: url(./images/images_15.png);
-    background-repeat: no-repeat;
     width: 20vw;
     height: 60vh;
+    /* background-color: salmon; */
+    border-top-right-radius: 15vw 50%;
+    border-top-left-radius: 15vw 50%;
     position: absolute;
-    top: 119vh;
+    top: 115vh;
     left: 40vw;
+}
+.deepcherry{
+  border-top-right-radius: 15vw 50%;
+  border-top-left-radius: 15vw 50%;
+  background-image: url(./images/딥체리jpg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20vw;
+  height: 60vh;
+  position: absolute;
+  /* z-index: 1; */
+}
+.peachs{
+  border-top-right-radius: 15vw 50%;
+  border-top-left-radius: 15vw 50%;
+  background-image: url(./images/피치티.jpg);
+  width: 20vw;
+  height: 60vh;
+  position: absolute;
+}
+.juicy{
+  border-top-right-radius: 15vw 50%;
+  border-top-left-radius: 15vw 50%;
+  background-image: url(./images/쥬스프롯.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20vw;
+  height: 60vh;
+  position: absolute;
+}
+.lemon{
+  border-top-right-radius: 15vw 50%;
+  border-top-left-radius: 15vw 50%;
+  background-image: url(./images/레몬허브.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20vw;
+  height: 60vh;
+  position: absolute;
 }
 
 #brand-intro {
@@ -230,11 +274,11 @@ h2 {
     text-align: center;
 }
 
-#scense-t>li>a {
+#scense-t>li {
     display: block;
     color: #fff;
 }
-#scense-t>li>a:hover{
+#scense-t>li:hover{
     color: #fff989;
 }
 
