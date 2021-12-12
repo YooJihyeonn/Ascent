@@ -28,57 +28,30 @@
     position: relative;
 }
 
-.flex {
-    display: flex;
-}
-
-.flex-direction {
-    flex-direction: column;
-}
-
-.just-a {
-    justify-content: space-around;
-}
-
-.just-b {
-    justify-content: space-between;
-}
-
-.just-e {
-    justify-content: space-evenly;
-}
-
-.just-center {
-    justify-content: center;
-}
-
-.just-flexend {
-    justify-content: flex-end;
-}
-
-.align-item {
-    align-items: center;
-}
-
-.align-item-b {
-    align-items: flex-end;
-}
-
-.absolute {
-    position: absolute;
-}
-
-.hidden {
-    display: none;
-}
+.flex {display: flex;}
+.flex-direction {flex-direction: column;}
+.just-a {justify-content: space-around;}
+.just-b {justify-content: space-between;}
+.just-e {justify-content: space-evenly;}
+.just-center {justify-content: center;}
+.just-flexend {justify-content: flex-end;}
+.align-item {align-items: center;}
+.align-item-b {align-items: flex-end;}
+.absolute {position: absolute;}
+.hidden {display: none;}
 .change{
     color: #fff989;
     font-weight: 500;
   }
-p {
-    font-family: 'Noto Serif KR', serif;
-}
+p {font-family: 'Noto Serif KR', serif;}
 
+/* scroll animation (sa, scroll animation) */
+.sa{
+    opacity: 0;
+    transform: all .5s ease-in;
+}
+.sa-up{transform: translate(0,10vw);}
+.sa.show{opacity: 1; transform: none;}
 header {
     width: 100%;
     height: 10vh;
@@ -329,42 +302,63 @@ h2 {
 
 #product {
     width: 100%;
-    height: 260vh;
+    height: 400vh;
     background-color: #fffcc7;
-    padding: 20vh 25vh 0 25vh;
     position: relative;
 }
-
+/* #diffserwrap, #fabricwrap, #deowrap, #handwrap img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30vw;
+  } */
+  #diffserimg{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30vw;
+      z-index: 999;
+  }
 h3 {
-    font-family: 'Antic Didone', serif;
-    font-weight: 500;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
     font-size: 6rem;
     color: #547543;
 }
-
+#diffserwrap{
+  width: 100%;
+  height: 67.5vh;
+  border: 1px solid red;
+}
+.containerdiffser {
+    width: 70vw;
+    height: 47vh;
+    position: absolute;
+    z-index: 11;
+    margin-top: 20vh;
+    margin-left: 25vh;
+    border: 1px solid red;
+}
+.diffsertext {
+    position: absolute;
+    top: 55vh;
+    left: 25vh;
+    transition-duration: 0.5s, 1s;
+    z-index: 10;
+}
 .diffser {
-    width: 100%;
+    width: 70vw;
     height: 55vh;
     position: relative;
-    /* border: 1px solid red; */
-
 }
-
-.diffser img {
-    margin-left: 25vw;
-}
-
-.diffser h3 {
-    position: absolute;
-    top: 40vh;
-}
-
 .leftline {
     width: 85vw;
-    height: 0.5vh;
+    height: 0.2vh;
     background-color: #547543;
+    border: none;
     position: absolute;
     z-index: 1;
+    top: 67vh;
     left: 0;
     margin: 0;
 }
@@ -374,63 +368,97 @@ h3 {
     height: 55vh;
     position: relative;
 }
-
-.fabirc img {
-    margin-left: 10vw;
-}
-
 .fabirc h3 {
     position: absolute;
     top: 40vh;
     right: 0;
 }
-
+.containerfabric{
+    width: 70vw;
+    height: 50vh;
+    position: relative;
+    z-index: 11;
+    /* margin-top: 67vh; */
+    margin-left: 25vh;
+}
+.fabrictext{
+    position: absolute;
+    top: 104vh;
+    right: 35vh;
+    transition-duration: 0.5s, 1s;
+    z-index: 10;
+}
 .rightline {
     width: 85vw;
-    height: 0.5vh;
+    height: 0.2vh;
     background-color: #547543;
+    border: none;
     margin: 0;
     position: absolute;
     z-index: 1;
     right: 0;
 }
 
-.deo {
-    width: 100%;
-    height: 55vh;
-    position: relative;
-}
-
-.deo h3 {
+.containerdeo{
     position: absolute;
-    top: 40vh;
-}
-
-.deo img {
-    margin-left: 25vw;
-}
-
-.hand {
-    width: 100%;
-    height: 55vh;
-    position: relative;
-}
-
-.hand h3 {
+    width: 70vw;
+    height: 50vh;
+    z-index: 11;
+    margin-left: 25vh;
+    border: 1px solid blue;
+  }
+  .deotext{
     position: absolute;
-    top: 40vh;
+    top: 154vh;
+    left: 25vh;
+    transition-duration: 0.5s, 1s;
+  }
+  .deoline{
+    width: 85vw;
+    height: 0.2vh;
+    background-color: #547543;
+    border: none;
+    margin: 0;
+    position: absolute;
+    top: 167vh;
+  }
+
+.containerhand {
+    position: absolute;
+    width: 70vw;
+    height: 50vh;
+    z-index: 11;
+    margin-left: 25vh;
+    margin-top: 50vh;
+    border: 1px solid blue;
+}
+
+.handtext {
+    position: absolute;
+    top: 205vh;
+    right: 35vh;
+    transition-duration: 0.5s, 1s;
+}
+.handline{
+    width: 85vw;
+    height: 0.2vh;
+    background-color: #547543;
+    border: none;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
     right: 0;
-}
-
-.hand img {
-    margin-left: 10vw;
+    top: 217.5vh;
 }
 
 #slider {
     width: 100%;
     height: 130vh;
-    padding-top: 20vh;
+    padding-top: 15vh;
     position: relative;
+    border: 1px solid violet;
+    background-color: white;
+    margin-top: 120vh;
 }
 
 h4 {
