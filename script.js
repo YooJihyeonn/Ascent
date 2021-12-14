@@ -1,33 +1,48 @@
 // Ascent javascript
 
-const scenseButtonOne = document.querySelector('.cherry');
-  const deepcherry = document.querySelector('.deepcherry');
-  const scenseButtonTwo = document.querySelector('.peach-b');
-  const peachs = document.querySelector('.peachs');
-  const scenseButtonThree = document.querySelector('.citrus');
-  const juicy = document.querySelector('.juicy');
-  const scenseButtonFour = document.querySelector('.lemon-b');
-  const lemon = document.querySelector('.lemon');
+// const scenseButtonOne = document.querySelector('.cherry');
+// const deepcherry = document.querySelector('.deepcherry');
+// const scenseButtonTwo = document.querySelector('.peach-b');
+// const peachs = document.querySelector('.peachs');
+// const scenseButtonThree = document.querySelector('.citrus');
+// const juicy = document.querySelector('.juicy');
+// const scenseButtonFour = document.querySelector('.lemon-b');
+// const lemon = document.querySelector('.lemon');
 
-  console.log(scenseButtonOne);
-  console.log(deepcherry);
-  scenseButtonOne.addEventListener('click',function(){
-    peachs.classList.toggle('hidden')
-    scenseButtonOne.classList.toggle('change')
-  });
-  scenseButtonTwo.addEventListener('click',()=>{
-    peachs.classList.toggle('hidden')
-    scenseButtonTwo.classList.toggle('change')
-  });
-  scenseButtonThree.addEventListener('click',()=>{
-    juicy.classList.toggle('hidden')
-    scenseButtonThree.classList.toggle('change')
-  });
-  scenseButtonFour.addEventListener('click',()=>{
-    lemon.classList.toggle('hidden')
-    scenseButtonFour.classList.toggle('change')
-  });
+// console.log(scenseButtonOne);
+// console.log(deepcherry);
+// scenseButtonOne.addEventListener('click',function(){
+//   peachs.classList.toggle('hidden')
+//   scenseButtonOne.classList.toggle('change')
+// });
+// scenseButtonTwo.addEventListener('click',()=>{
+//   peachs.classList.toggle('hidden')
+//   scenseButtonTwo.classList.toggle('change')
+// });
+// scenseButtonThree.addEventListener('click',()=>{
+//   juicy.classList.toggle('hidden')
+//   scenseButtonThree.classList.toggle('change')
+// });
+// scenseButtonFour.addEventListener('click',()=>{
+//   lemon.classList.toggle('hidden')
+//   scenseButtonFour.classList.toggle('change')
+// });
+
   // 이벤트 타켓 event.target / event.currentTarget
+  const buttonTag = document.querySelectorAll('#scense-t li');
+  const imagTag = document.querySelectorAll('.sence-image div')
+  console.log(buttonTag);
+  console.log(imagTag);
+
+  for(let i=0; i<buttonTag.length; i++){
+    buttonTag[i].addEventListener('click',function(event){
+      event.target.classList.toggle('change');
+      // for(let index =0; index<imagTag.length; index++){
+      imagTag[i].classList.toggle('hidden');
+      // let imagTag = event.nextElementSibling;
+      // };
+    });
+};
 
 //   스크롤하면 하단에 로고 이미지가 회전했으면 좋겠다.
   function rotateImage(){
